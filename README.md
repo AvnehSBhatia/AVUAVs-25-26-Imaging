@@ -2,7 +2,7 @@
 
 A complete pipeline for training YOLO models on custom datasets with automated data generation, augmentation, and training.
 
-## 🎯 Overview
+## Overview
 
 This project implements a comprehensive pipeline for training YOLOv11 models on custom object detection datasets. The pipeline includes:
 
@@ -12,7 +12,7 @@ This project implements a comprehensive pipeline for training YOLOv11 models on 
 4. **Model Training** - Trains YOLOv11 with optimized parameters
 5. **Inference Testing** - Evaluates model performance
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 UAVS25_26/
@@ -38,7 +38,7 @@ UAVS25_26/
 └── best.pt               # Best trained model (copied to root)
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -120,7 +120,7 @@ python test_inference.py
 - **Output**: `inference_results/` directory
 - **Process**: Generates performance metrics and annotated images
 
-## ⚙️ Configuration
+## Configuration
 
 ### Training Parameters (in `train_yolo.py`)
 ```python
@@ -147,7 +147,7 @@ BLEND_PERCENTAGES = [10, 20, 30, 40, 50, 60, 70, 80, 90]
 MAX_WORKERS = 12
 ```
 
-## 📊 Expected Outputs
+## Expected Outputs
 
 ### Training Results
 - **Model files**: `best.pt`, `last.pt`
@@ -159,7 +159,7 @@ MAX_WORKERS = 12
 - **Performance metrics**: `inference_results/inference_results.json`
 - **Summary statistics**: Console output
 
-## 🔧 Customization
+## Customization
 
 ### Adding New Objects
 1. Place transparent PNG images in the `odlc/` directory
@@ -174,7 +174,7 @@ MAX_WORKERS = 12
 1. Modify constants in `train_yolo.py`
 2. Re-run the pipeline from Step 4
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -201,7 +201,7 @@ MAX_WORKERS = 12
 - **For production**: Set `MAX_BG_IMAGES = None` for all images
 - **GPU training**: Change `device=mps` to `device=0` for CUDA
 
-## 📈 Performance Metrics
+## Performance Metrics
 
 The pipeline generates comprehensive performance metrics:
 
@@ -210,7 +210,7 @@ The pipeline generates comprehensive performance metrics:
 - **Processing speed**: Images per second, total time
 - **Dataset statistics**: File counts, split distributions
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
